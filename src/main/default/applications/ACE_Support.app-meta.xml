@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <description>Clone of &quot;ACE USER&quot; but used to have Salesforce as the default Landing Page</description>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>ACE Support</label>
+    <logo>ACE_Folder/BTIG_Salesforce_Logo.png</logo>
+    <tabs>ACE_Allegro_Direct</tabs>
+    <tabs>ACE_Deal_Manager</tabs>
+    <tabs>ACE_Concerto</tabs>
+    <tabs>T1C_Base__Employee__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>Private_Note__c</tabs>
+    <tabs>T1C_Base__Deal__c</tabs>
+    <tabs>Special_Account__c</tabs>
+    <tabs>T1C_Base__Interest_Subject_Type_Attribute__c</tabs>
+    <tabs>T1C_Base__Organization_Membership__c</tabs>
+    <tabs>T1C_Base__Interest_Subject_Coverage__c</tabs>
+    <tabs>T1C_Base__Address__c</tabs>
+    <tabs>T1C_Base__Interest__c</tabs>
+    <tabs>T1C_Base__Preference_Restriction__c</tabs>
+    <tabs>ADH_Updates</tabs>
+    <tabs>T1C_Base__ReciprocalRole__c</tabs>
+    <tabs>BTIG_CRM_Reports</tabs>
+</CustomApplication>

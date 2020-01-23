@@ -1,0 +1,32 @@
+The purpose of release notes is for each Commit to include the following information:
+1. QA forcused information on
+    -what changed
+    -how I can check it
+2. Additional information on:
+    -functional requirements
+    -Links to templates, documents and other artifacts used in development
+    -Jira and Smartsheet ticket information for this release
+-----------------------------------------------------------------------------------
+Release checklist-make sure each commit has the following:
+1. Release notes describing the release
+2. Azure pipeline should show successful deployment into development
+    - https://dev.azure.com/msteg0751/msteg/_build
+3. Release and retrieve package.xml updated with new elements
+4. Each commit should follow format:
+    -"Tier1-<Project/Sprint ID>-JIRA<number>-<Description>"
+    -"BTIG1-<Project/Sprint ID>-SS<number>-<Description>"
+5. Is there potential integration impact that QA should be aware of?
+6. Commits with Field Changes include updates to the FLS folders and spreadsheets
+7. Private/Public validation - is there risk from this change that public info will be visible on the private side
+8. Do we need a Smoke screen test or regression test
+9. Is there impact on Tier1 that we are not aware of (i.e. hidden trigger code that will fire)
+-----------------------------------------------------------------------------------
+Standing up a new sandbox:
+1. Create Sandbox from production
+2. Request SSO
+3. Load Core (this includes all data not included in refresh)
+- BTIG-All-2A-103-IB-CoreDeployment
+4. Add any packages specific to this environment
+5. Update Azure pipelines to deploy to this environment based on filters
+6. Update Azure key vault with the correct IDs for the new environment
+-----------------------------------------------------------------------------------
